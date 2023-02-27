@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="wrap">
+            <audio controls src="./background/music.mp3"></audio>
+        </div>
+        <div class="quote-box">
+            <div class="text-row">
+                <i class="fa-solid fa-quote-left"></i>
+                <div class="quote">
+                    <p class="quote-text" id="quote">The way to get started is to quit talking and begin doing</p>
+                    <p class="quote-name" id="author">Walt Disney</p>
+                </div>
+            </div>
+            <div class="button-row">
+                <button class="twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                </button>
+                <button class="new-quote" onclick="getQuote(apiUrl)">New Quote</button>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
